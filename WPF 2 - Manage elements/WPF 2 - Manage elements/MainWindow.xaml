@@ -1,0 +1,73 @@
+﻿<Window x:Class="WPF_2___Manage_elements.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_2___Manage_elements"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="581.199" Width="828.202">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="2" Margin="20" CornerRadius="20">
+            <StackPanel Margin="10">
+                <Label Foreground="Blue" FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       VerticalContentAlignment="Bottom" VerticalAlignment="Center"
+                       >
+                    <Label.Content>
+                        <StackPanel>
+                            <Button>
+                                <StackPanel Orientation="Horizontal">
+                                    <Ellipse Fill="Red" Width="20" Height="20"/>
+                                    <TextBlock>Text</TextBlock>
+                                </StackPanel>
+                            </Button>
+
+                        </StackPanel>
+                    </Label.Content>
+                </Label>
+
+                <TextBox Margin="10" FontSize="16" Background="LightCoral" Text="Helo"
+                         Padding="5 2 10 1" AcceptsReturn="True" Height="60" AcceptsTab="True" SelectionBrush="Yellow" SelectionOpacity="0.4" SpellCheck.IsEnabled="True"/>
+            </StackPanel>
+        </Border>
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="4" CornerRadius="20" Margin="20" Grid.Column="1">
+            <StackPanel Margin="10">
+                <Button Width="100" Height="40" 
+                        BorderBrush="Blue"
+                        Margin="10" ClickMode="Hover" Click="Hover_Click"
+                        BorderThickness="3">One</Button>
+                <Button Width="100" Height="40" 
+                        BorderBrush="Blue" ClickMode="Press" Click="Press_Click"
+                        Margin="10"
+                        BorderThickness="3">Two</Button>
+                <Button Width="100" Height="40" 
+                        BorderBrush="Blue" ClickMode="Release" Click="Release_Click"
+                        Margin="10"
+                        BorderThickness="3">Three</Button>
+            </StackPanel>
+        </Border>
+        <Border Background="LightBlue" BorderBrush="Black" BorderThickness="4" CornerRadius="20" Margin="20" Grid.Row="1">
+            <StackPanel Margin="10">
+                <RadioButton GroupName="A">One</RadioButton>
+                <RadioButton GroupName="A">Two</RadioButton>
+                <Separator/>
+                <RadioButton GroupName="B">Three</RadioButton>
+                <RadioButton GroupName="B">Four</RadioButton>
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox Checked="Checked_Changed" Unchecked="Unchecked_Changed">One</CheckBox>
+                    <CheckBox Checked="Checked_Changed" Unchecked="Unchecked_Changed">Two</CheckBox>
+                    <CheckBox Checked="Checked_Changed" Unchecked="Unchecked_Changed">Three</CheckBox>
+                </StackPanel>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

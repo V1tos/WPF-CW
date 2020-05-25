@@ -1,0 +1,57 @@
+﻿<Window x:Class="WPF_1___Intro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_1___Intro"
+        mc:Ignorable="d"
+        Title="XAML - Extensible Application Markup Language" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+
+        <WrapPanel Orientation="Horizontal">
+            <Button Foreground="Navy" Height="20" Margin="2"
+                    Content="Navy"/>
+            <Button Foreground="Blue" Height="20" Margin="2"
+                    Content="Blue"/>
+            <Button Foreground="Aqua" Height="20" Margin="2"
+                    Content="Aqua"/>
+            <Button Foreground="Teal" Height="20" Margin="2"
+                    Content="Teal"/>
+            <Button Foreground="Olive" Height="20" Margin="2"
+                    Content="Olive"/>
+            <Button Foreground="Green" Height="20" Margin="2"
+                    Content="Green"/>
+            <Button Foreground="Lime" Height="20" Margin="2"
+                    Content="Lime"/>
+            <Button Foreground="Yellow" Height="20" Margin="2"
+                    Content="Yellow"/>
+            <Button Foreground="Orange" Height="20" Margin="2"
+                    Content="Orange"/>
+            <Button Foreground="Red" Height="20" Margin="2"
+                    Content="Red"/>
+            <Button Foreground="Maroon" Height="20" Margin="2"
+                    Content="Maroon"/>
+            <Button Foreground="Fuchsia" Height="20" Margin="2"
+                    Content="Fuchsia"/>
+            <Button Foreground="Purple" Height="20" Margin="2"
+                    Content="Purple"/>
+            <Button Foreground="Black" Height="20" Margin="2"
+                    Content="Black"/>
+            <Button Foreground="Silver" Height="20" Margin="2"
+                    Content="Silver"/>
+            <Button Foreground="Gray" Height="20" Margin="2"
+                    Content="Gray"/>
+            <Button Foreground="White" Height="20" Margin="2"
+                    Content="White"/>
+
+        </WrapPanel>
+       
+        
+        
+    </Grid>
+</Window>

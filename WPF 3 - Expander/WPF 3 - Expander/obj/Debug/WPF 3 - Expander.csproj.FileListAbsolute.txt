@@ -1,0 +1,15 @@
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\bin\Debug\WPF 3 - Expander.exe.config
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\bin\Debug\WPF 3 - Expander.exe
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\bin\Debug\WPF 3 - Expander.pdb
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\obj\Debug\WPF 3 - Expander.csprojAssemblyReference.cache
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\obj\Debug\MainWindow.g.cs
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\obj\Debug\App.g.cs
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\obj\Debug\WPF 3 - Expander_MarkupCompile.cache
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\obj\Debug\WPF 3 - Expander_MarkupCompile.lref
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\obj\Debug\MainWindow.baml
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\obj\Debug\WPF 3 - Expander.g.resources
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\obj\Debug\WPF_3___Expander.Properties.Resources.resources
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\obj\Debug\WPF 3 - Expander.csproj.GenerateResource.cache
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\obj\Debug\WPF 3 - Expander.csproj.CoreCompileInputs.cache
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\obj\Debug\WPF 3 - Expander.exe
+D:\ШАГ\Програмування\C# WPF\WPF 3 - Expander\WPF 3 - Expander\obj\Debug\WPF 3 - Expander.pdb

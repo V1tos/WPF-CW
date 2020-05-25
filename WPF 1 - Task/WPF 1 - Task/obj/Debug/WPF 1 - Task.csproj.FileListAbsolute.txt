@@ -1,0 +1,15 @@
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\bin\Debug\WPF 1 - Task.exe.config
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\bin\Debug\WPF 1 - Task.exe
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\bin\Debug\WPF 1 - Task.pdb
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\obj\Debug\WPF 1 - Task.csprojAssemblyReference.cache
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\obj\Debug\MainWindow.g.cs
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\obj\Debug\App.g.cs
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\obj\Debug\WPF 1 - Task_MarkupCompile.cache
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\obj\Debug\WPF 1 - Task_MarkupCompile.lref
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\obj\Debug\MainWindow.baml
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\obj\Debug\WPF 1 - Task.g.resources
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\obj\Debug\WPF_1___Task.Properties.Resources.resources
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\obj\Debug\WPF 1 - Task.csproj.GenerateResource.cache
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\obj\Debug\WPF 1 - Task.csproj.CoreCompileInputs.cache
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\obj\Debug\WPF 1 - Task.exe
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Task\WPF 1 - Task\obj\Debug\WPF 1 - Task.pdb

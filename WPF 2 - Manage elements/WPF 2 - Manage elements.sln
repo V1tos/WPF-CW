@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF 2 - Manage elements", "WPF 2 - Manage elements\WPF 2 - Manage elements.csproj", "{BBB1BC9C-BDB4-4FCB-BA2E-03C84BD4DE2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBB1BC9C-BDB4-4FCB-BA2E-03C84BD4DE2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB1BC9C-BDB4-4FCB-BA2E-03C84BD4DE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBB1BC9C-BDB4-4FCB-BA2E-03C84BD4DE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBB1BC9C-BDB4-4FCB-BA2E-03C84BD4DE2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CC58401-BEB4-4F05-BBDE-CD12D4DCD788}
+	EndGlobalSection
+EndGlobal

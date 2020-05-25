@@ -1,0 +1,15 @@
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\bin\Debug\WPF 1 - Intro.exe.config
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\bin\Debug\WPF 1 - Intro.exe
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\bin\Debug\WPF 1 - Intro.pdb
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\obj\Debug\WPF 1 - Intro.csprojAssemblyReference.cache
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\obj\Debug\MainWindow.g.cs
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\obj\Debug\App.g.cs
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\obj\Debug\WPF 1 - Intro_MarkupCompile.cache
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\obj\Debug\WPF 1 - Intro_MarkupCompile.lref
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\obj\Debug\MainWindow.baml
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\obj\Debug\WPF 1 - Intro.g.resources
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\obj\Debug\WPF_1___Intro.Properties.Resources.resources
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\obj\Debug\WPF 1 - Intro.csproj.GenerateResource.cache
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\obj\Debug\WPF 1 - Intro.csproj.CoreCompileInputs.cache
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\obj\Debug\WPF 1 - Intro.exe
+D:\ШАГ\Програмування\C# WPF\WPF 1 - Intro\WPF 1 - Intro\obj\Debug\WPF 1 - Intro.pdb

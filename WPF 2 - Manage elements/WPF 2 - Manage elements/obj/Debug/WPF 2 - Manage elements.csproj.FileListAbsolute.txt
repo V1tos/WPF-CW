@@ -1,0 +1,15 @@
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\bin\Debug\WPF 2 - Manage elements.exe.config
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\bin\Debug\WPF 2 - Manage elements.exe
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\bin\Debug\WPF 2 - Manage elements.pdb
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\obj\Debug\WPF 2 - Manage elements.csprojAssemblyReference.cache
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\obj\Debug\MainWindow.g.cs
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\obj\Debug\App.g.cs
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\obj\Debug\WPF 2 - Manage elements_MarkupCompile.cache
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\obj\Debug\WPF 2 - Manage elements_MarkupCompile.lref
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\obj\Debug\MainWindow.baml
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\obj\Debug\WPF 2 - Manage elements.g.resources
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\obj\Debug\WPF_2___Manage_elements.Properties.Resources.resources
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\obj\Debug\WPF 2 - Manage elements.csproj.GenerateResource.cache
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\obj\Debug\WPF 2 - Manage elements.csproj.CoreCompileInputs.cache
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\obj\Debug\WPF 2 - Manage elements.exe
+D:\ШАГ\Програмування\C# WPF\WPF 2 - Manage elements\WPF 2 - Manage elements\obj\Debug\WPF 2 - Manage elements.pdb
