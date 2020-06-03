@@ -23,6 +23,23 @@ namespace WPF_5___Controls_2
         public MainWindow()
         {
             InitializeComponent();
+            Run run = new Run("Hello, first run");
+            Bold bold = new Bold();
+            Run run2 = new Run();
+            run2.Text = "dynamically text run";
+            bold.Inlines.Add(run2);
+
+            Italic italic = new Italic(new Run("Hello, italic"));
+            Underline underline = new Underline();
+            underline.Inlines.Add(new Run("Underline"));
+
+            Span span = new Span();
+            span.Inlines.Add(run);
+            span.Inlines.Add(bold);
+            span.Inlines.Add(italic);
+            span.Inlines.Add(underline);
+
+            label.Content = span;
         }
     }
 }

@@ -33,18 +33,18 @@
 
                 </Grid>
             </TabItem>
-            <TabItem Header="Media">
+            <TabItem Header="Media" FontSize="20">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="3*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <MediaElement Name="media">
+                    <MediaElement x:Name="media" LoadedBehavior="Manual">
                         
                     </MediaElement>
-                    <StackPanel Grid.Row="1">
+                    <StackPanel Grid.Row="1" Background="LightBlue">
                         <Slider x:Name="slider" Margin="15" SmallChange="0.1" LargeChange="0.25" Minimum="0" Maximum="1" Value="{Binding ElementName=media,Path=Volume}"/>
-                        <StackPanel Background="LightBlue" Orientation="Horizontal" HorizontalAlignment="Center" >
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <Button Width="80" Height="40" Margin="20" Click="Open_Click" Content="Open">
                                 <Button.ToolTip>
                                     <ToolTip>

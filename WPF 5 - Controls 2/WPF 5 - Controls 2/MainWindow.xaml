@@ -5,8 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_5___Controls_2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="384.836" Width="576.23">
     <Grid>
-        
+        <TabControl>
+            <TabItem Header="TextPrimitives">
+                <DockPanel>
+                    <Menu DockPanel.Dock="Top">
+                        <MenuItem>
+                            <MenuItem.Header>
+                                <Bold>
+                                    Bold item
+                                </Bold>
+                            </MenuItem.Header>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuItem.Header>
+                                <Italic>
+                                    Underline item
+                                </Italic>
+                            </MenuItem.Header>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuItem.Header>
+                                <Hyperlink>
+                                    Hyperlink item
+                                </Hyperlink>
+                            </MenuItem.Header>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuItem.Header>
+                                <Run>
+                                    Run item
+                                </Run>
+                            </MenuItem.Header>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuItem.Header>
+                                <Bold>
+                                    <Italic>
+                                        <Underline>
+                                            Bold italic underline item
+                                        </Underline>
+                                    </Italic>
+                                </Bold>
+                            </MenuItem.Header>
+                        </MenuItem>
+                    </Menu>
+                    <Label DockPanel.Dock="Top" Background="LightBlue">
+                        <TextBlock TextWrapping="Wrap" FontSize="15" Padding="10">
+                            <Bold> Windows Presentation Foundation</Bold>
+                            <Italic>.NET Framework</Italic>
+                        
+                        </TextBlock>
+                    </Label>
+                    <Label Name="label" Background="LightGreen"></Label>
+                </DockPanel>
+
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>

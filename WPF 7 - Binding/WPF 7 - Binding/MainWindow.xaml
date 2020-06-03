@@ -1,0 +1,97 @@
+﻿<Window x:Class="WPF_7___Binding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_7___Binding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="237.875" Width="353.679">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Bindings">
+                <StackPanel Margin="20">
+                    <Slider x:Name="slider"
+                            Minimum="5"
+                            Maximum="100"
+                            TickFrequency="10"
+                            TickPlacement="Both"
+                            Value="20"
+                            />
+                    <Label x:Name="label" Content="Hello, world!"
+                           FontSize="{Binding ElementName=slider, Path=Value, Mode=TwoWay}"/>
+                    <Button Width="100" Height="50" Content="Click me" Click="Button_Click"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Bindings via code">
+                <StackPanel Margin="20">
+                    <TextBox x:Name="text" Margin="10"></TextBox>
+                    <Slider x:Name="slider2"
+                            Minimum="5"
+                            Maximum="100"
+                            TickFrequency="10"
+                            TickPlacement="Both"
+                            Value="20"
+                            />
+                    <Label x:Name="label2" Content="Hello, world!"
+                           />
+                    <Button Content="Clear" Click="Clear_Click"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Update Bindings">
+                <StackPanel Margin="20">
+                    <Slider x:Name="slider3"
+                            Minimum="1"
+                            Maximum="100"
+                            TickFrequency="10"
+                            TickPlacement="Both"
+                            Value="20"
+                            IsSnapToTickEnabled="True"
+                            />
+                    <Label x:Name="label3" FontSize="{Binding ElementName=slider3, Path=Value,
+                                                      Mode=TwoWay}" Content="Some text"/>
+                    <TextBox Margin="10" Text="{Binding ElementName=label3, Path=FontSize,
+                                                UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Multiple bindings">
+                <StackPanel Margin="20">
+                    <Slider x:Name="slider4"
+                            Minimum="1"
+                            Maximum="100"
+                            TickFrequency="10"
+                            TickPlacement="Both"
+                            Value="20"
+                            IsSnapToTickEnabled="True"
+                            />
+                    <ListBox x:Name="list">
+                        <ListBoxItem Foreground="Red">Red</ListBoxItem>
+                        <ListBoxItem Foreground="Green">Green</ListBoxItem>
+                        <ListBoxItem Foreground="Blue">Blue</ListBoxItem>
+                    </ListBox>
+                    <Label x:Name="lblContent" Content="Hello"/>
+                    <Label Content="{Binding ElementName=lblContent, Path=Content}"
+                           FontSize="{Binding ElementName=slider4, Path=Value}"
+                           Foreground="{Binding ElementName=list, Path=SelectedItem.Foreground}"/>
+                </StackPanel>
+                
+            </TabItem>
+            <TabItem Header="OneWayToSource">
+                <StackPanel Margin="20">
+                    <TextBox Margin="20"
+                             Height="70"
+                             TextWrapping="Wrap"
+                             AcceptsReturn="True"
+                             Text="{Binding ElementName=run, Path=Text, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+                    <FlowDocumentScrollViewer>
+                        <FlowDocument>
+                            <Paragraph>Some text</Paragraph>
+                            <Paragraph>
+                                <Run x:Name="run"></Run>
+                            </Paragraph>
+                        </FlowDocument>
+                    </FlowDocumentScrollViewer>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

@@ -1,0 +1,73 @@
+﻿<Window x:Class="WPF_6___NonFixedDocs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_6___NonFixedDocs"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="356.557" Width="565.164">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="41*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl Grid.ColumnSpan="2">
+            <TabItem Header="FlowDocument">
+                <FlowDocumentPageViewer>
+                    <FlowDocument>
+                        <Paragraph FontSize="18" Foreground="White" Background="Black"
+                                   Padding="10">
+                            <Bold>Title</Bold>
+                        </Paragraph>
+                        <Paragraph>
+                            <Run>
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                                Hello world!!!Hello world!!!Hello world!!!Hello world!!!
+                            </Run>
+                        </Paragraph>
+                    </FlowDocument>
+                </FlowDocumentPageViewer>
+            </TabItem>
+            <TabItem Header="DocumentReader">
+                <FlowDocumentReader>
+                    <FlowDocument>
+                        <Paragraph FontSize="22" TextAlignment="Center" Foreground="Wheat" Background="Black" Padding="10">
+                            <Bold>Title</Bold>
+                        </Paragraph>
+                        <Paragraph>
+                            <Italic>asdasdasdasdasd</Italic>
+                     
+                            <Figure Width="150" FontSize="12" Padding="15">
+                                <Paragraph>
+                                    asdasdasdasdqwwdasfasdasdq
+                                </Paragraph>
+                            </Figure>
+                        </Paragraph>
+                    </FlowDocument>
+                </FlowDocumentReader>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
