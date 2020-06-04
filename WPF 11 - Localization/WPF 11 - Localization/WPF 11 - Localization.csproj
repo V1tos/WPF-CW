@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5257D919-DD93-470B-92AC-7E3041B52226}</ProjectGuid>
+    <ProjectGuid>{EA5462E8-3387-42AD-B9B4-A601F2F4E3DD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WPF_10___Contacts__MVVM_</RootNamespace>
-    <AssemblyName>WPF 10 - Contacts %28MVVM%29</AssemblyName>
+    <RootNamespace>WPF_11___Localization</RootNamespace>
+    <AssemblyName>WPF 11 - Localization</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,17 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ViewModel\Commands\AddCommand.cs" />
-    <Compile Include="ViewModel\Commands\ClearCommand.cs" />
-    <Compile Include="ViewModel\Commands\CloseCommand.cs" />
-    <Compile Include="ViewModel\Commands\DeleteCommand.cs" />
-    <Compile Include="ViewModel\Commands\EditCommand.cs" />
-    <Compile Include="ViewModel\Commands\SaveCommand.cs" />
-    <Compile Include="ViewModel\ContactVM.cs" />
-    <Compile Include="ViewModel\Convertors\ConvertBoolToVisible.cs" />
-    <Compile Include="View\ContactWindow.xaml.cs">
-      <DependentUpon>ContactWindow.xaml</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -74,17 +63,29 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ChangeLang.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\ContactWindow.xaml">
+    <Page Include="Properties\Ua.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Properties\Eng.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Dark.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Light.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Contact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -110,6 +111,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

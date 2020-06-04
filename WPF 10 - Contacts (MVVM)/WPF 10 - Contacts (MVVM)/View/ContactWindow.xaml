@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_10___Contacts__MVVM_.View"
         xmlns:vm="clr-namespace:WPF_10___Contacts__MVVM_.ViewModel"
+        xmlns:convertor="clr-namespace:WPF_10___Contacts__MVVM_.ViewModel.Convertors"
+        xmlns:command="clr-namespace:WPF_10___Contacts__MVVM_.ViewModel.Commands"
         mc:Ignorable="d"
-        Title="ContactWindow" Height="450" Width="800">
+        Title="ContactWindow" Height="478.871" Width="746.382">
     <Window.Resources>
         <Style x:Key="btnList" TargetType="Button">
             <Setter Property="Margin" Value="10"/>
-            <Setter Property="Width" Value="80"/>
+            <Setter Property="Width" Value="70"/>
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="Background" Value="LightGray"/>
             <Setter Property="Foreground" Value="Black"/>
@@ -25,46 +27,65 @@
         </Style>
         <Style TargetType="TextBox">
             <Setter Property="Height" Value="30"/>
-            <Setter Property="Width" Value="250"/>
+            <Setter Property="Width" Value="210"/>
             <Setter Property="FontSize" Value="18"/>
         </Style>
         <Style TargetType="Label">
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="Margin" Value="10"/>
         </Style>
+        <!--<Style x:Key="stackCollapsed" TargetType="StackPanel">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=sentButton,Path=IsPressed}" Value="true">
+                    <Setter Property="StackPanel.Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>-->
         <vm:ContactVM x:Key="vm"/>
+        <convertor:ConvertBoolToVisible x:Key="convert"/>
+        <command:DeleteCommand x:Key="del" VM="{StaticResource vm}"/>
+        <command:EditCommand x:Key="edit" VM="{StaticResource vm}"/>
     </Window.Resources>
     <Grid DataContext="{StaticResource vm}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="1.3*"/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <StackPanel>
+        <StackPanel IsEnabled="{Binding IsEnabledMainPanel}" >
             <Label>Contact list</Label>
             <ListBox ItemsSource="{Binding Contacts}" SelectedItem="{Binding SelectedContact}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <Label Content="{Binding Name}"></Label>
-                            <Button Style="{StaticResource btnList}">Edit</Button>
-                            <Button Style="{StaticResource btnList}">Delete</Button>
-                            <Button></Button>
+                            <Label Width="70" Content="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Label>
+                            <Button Style="{StaticResource btnList}" Command="{StaticResource edit}" CommandParameter="{Binding Phone}">Edit</Button>
+                            <Button Style="{StaticResource btnList}" Command="{StaticResource del}" CommandParameter="{Binding Phone}">Delete</Button>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
         </StackPanel>
-        <StackPanel Grid.Column="1">
+        <StackPanel Grid.Column="1" IsEnabled="{Binding IsEnabledMainPanel}">
             <Label>Name</Label>
-            <TextBox Text="{Binding Contact.Name, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <TextBox Text="{Binding Contact.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
             <Label>Surname</Label>
-            <TextBox Text="{Binding Contact.Surname, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <TextBox Text="{Binding Contact.Surname, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
             <Label>Phone</Label>
-            <TextBox Text="{Binding Contact.Phone, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <TextBox Text="{Binding Contact.Phone, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
             <Button Style="{StaticResource btnEdits}" Command="{Binding AddCommand}" CommandParameter="{Binding Contact.Name}">Add</Button>
-            <Button Style="{StaticResource btnEdits}">Clear</Button>
+            <Button Style="{StaticResource btnEdits}" Command="{Binding ClearCommand}" >Clear</Button>
         </StackPanel>
-        
+        <StackPanel Grid.Column="2" Visibility="{Binding IsVisibleEditPanel, Converter={StaticResource convert}}">
+            <Label>Name</Label>
+            <TextBox IsEnabled="True" Text="{Binding ChangingContact.Name}"></TextBox>
+            <Label>Surname</Label>
+            <TextBox IsEnabled="False" Text="{Binding ChangingContact.Surname}"></TextBox>
+            <Label>Phone</Label>
+            <TextBox Text="{Binding ChangingContact.Phone, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <Button Style="{StaticResource btnEdits}" Command="{Binding SaveCommand}" CommandParameter="{Binding ChangingContact.Phone}">Save</Button>
+            <Button Style="{StaticResource btnEdits}" Command="{Binding CloseCommand}">Close</Button>
+        </StackPanel>
+
     </Grid>
 </Window>
